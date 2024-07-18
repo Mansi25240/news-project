@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+        <div class="box">
+            <h1 class="date"></h1>
+            <input type="text" placeholder="search city" class="search">
+            <button>Search</button>
+            <div class="box1">
+                <div class="content">
+                <h2 class="temp"> </h2>
+                <h2 class="city"></h2>
+                <h2 class="per"></h2>
+                <h2> Humidity</h2>
+                <h2 class="wind"></h2>
+                <h2>wind</h2>
+                <img src="weather-icon-with-sun-and-cloud-on-transparent-background-free-png.webp"height="100" width="100" align="right">
+            </div>
+
+            </div>
+        </div>
+        <script>
+            let date=new Date()
+            let a=date.getDate()
+            let b=date.getMonth()
+            let o=b+1;
+            let c=date.getFullYear()
+            document.querySelector('.date').innerHTML=a+" "+o+" "+c
+           let f1= document.querySelector('.box1')
+
+
+            const apiKey="6155103a7ca2de2bc5c6104924ee612d"
+            const apiurl="https://api.openweathermap.org/data/2.5/weather?q="
+            const city=document.querySelector('.search')
+            const bt=document.querySelector('button')
+            const img=document.querySelector('img')
+            async function CheckWeather(city)
+            {
+                const response=await fetch(apiurl+city+`&appid=${apiKey}&units=metric`)
+                let data= await response.json()
+                console.log(data)
+                document.querySelector('.temp').innerHTML=data.main.temp+"℃"
+                document.querySelector('.city').innerHTML=data.name
+                document.querySelector('.per').innerHTML=data.main.humidity+"%"
+                document.querySelector('.wind').innerHTML=data.wind.speed+"km/hr"
+                
+
+            }
+
+            bt.addEventListener('click',function()
+            {
+                CheckWeather(city.value)
+                f1.classList.add('show')
+
+            })
+
+          
+        </script>
+
+</body>
+</html>

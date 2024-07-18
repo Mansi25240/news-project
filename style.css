@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar
+{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    background-color: rgb(205, 218, 218);
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkmagenta;
+    margin-left: 30px;
+    margin-top: 10px;
+
+
+}
+.nav-links ul{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.nav-links li{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+   font-size:20px ;
+}
+.search-bar
+{
+    margin-left: 120px;
+    margin-top: 15px;
+    
+}
+.search-bar input{
+    height: 35px;
+    background-color: transparent;
+    border-radius: 0 5px 0 5px ;
+    border: 0.5px solid gray;
+    border-color: rgb(93, 0, 255);
+    border-style: double;
+}
+.search-bar button
+{
+    background-color: rgb(53, 165, 235);
+    height: 35px;
+    border: none;
+    color: white;
+    width: 80px;
+    
+}
+.search-bar input:hover
+{
+   border-color: darkgreen;
+  
+}
+.nav-links li:hover{
+    color: rgb(109, 7, 243);
+}
+.nav-links li:active{
+    color: darkred;
+}
+.weather
+{
+    margin-left: 100px;
+    margin-top: 8px;
+}
+.weather2
+{
+    height: 300px;
+    position: absolute;
+}
+main{
+    padding-block: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.cards
+{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+.card{
+    width: 250px;
+    min-height: 100px;
+    max-height: 350px;
+    box-shadow: 0 0 4px #decffd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 5px 0 5px 0 gray;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.card:hover{
+    box-shadow: 0 0 4px #decffd;
+    background-color: #f9fddf;
+    transform: translateY(-2px);
+    box-shadow: 5px 0 5px 0 rgb(74, 55, 247);
+ 
+
+}
+
+.card-header img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source
+{
+    margin-block: 12px;
+}
+
+.link.active
+{
+    color: rgb(24, 5, 167);
+}
+.live a{
+   font-size: 30px;
+   width: 50px;
+   color: rgb(199, 10, 10);
+   padding-left: 50px;
+   font-weight: 700;
+   padding-bottom: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   animation-name: anna;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+    
+}
+.live{
+    margin-top: 15px;
+}
+@keyframes anna{
+    0%
+    {
+        color: chartreuse;
+    }
+    25%
+    {
+        color: rgb(199, 10, 10);
+    }
+    50%
+
+    {
+        color: chartreuse;
+
+    }
+    75%
+{
+    color: rgb(199, 10, 10);
+}
+}
+
+.mode
+{
+   opacity: 1;
+   height: 5px;
+   width: 5px;
+   border: none;
+   margin-top: 5px;
+   
+}
+
+.show
+{
+    background-color: rgb(9, 9, 9); 
+}
+.show2
+{
+    opacity: 0;
+    pointer-events: none;
+}
+.modee
+{
+    opacity: 1;
+    height: 5px;
+   width: 5px;
+   border: none;
+}
+.show3
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+

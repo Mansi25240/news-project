@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+    <div class="nav-bar">
+        <a href="#" onclick="reload()">NEWS</a>
+        <div class="nav-links">
+            <ul>
+                <li class="link" id="ipl" onclick="nav('ipl')">IPL</li>
+                <li class="link" id="politics" onclick="nav('politics')">Politics</li>
+                <li class="link" id="finance" onclick="nav('finance')">Finance</li>
+                <li class="link" id="technology" onclick="nav('technology')" >Technology</li>
+            </ul>
+        </div>
+        <p class="live"><a href="live.html">Live</a></p>
+        <div class="search-bar">
+            <input type="text" class="search" placeholder="search here">
+            <button class="btn">search</button>
+        </div>
+        <img class="weather">
+            <a href="weather.html"><img src="weather02-1024.webp" height="50" width="50"></a>
+        </div>
+    </div>
+    <p><button  class="mode"><img src="OIP.jpg" height="30px" width="30px"></button>
+        <button  class="modee"><img src="3f53cf1cb5f468c72bd065d436adf831.700x700x1 (1).jpg" height="30px" width="30px"></button></p>
+        <main>
+       <div class="cards">
+       
+       
+       
+       </div>
+    </main>
+    <template class="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="#"  class="im">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">fghjk</h3>
+                <h6 class="news-source">fgh ghj hjk</h6>
+                <p class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt quae architecto mollitia voluptates harum fuga quia consectetur nulla deserunt.</p>
+            </div>
+        </div>
+    </template>
+    <script src="news.js"></script>
+    
+</body>
+</html>
